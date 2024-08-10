@@ -9,12 +9,15 @@ export default defineConfig({
     federation({
       name: "main-ui",
       remotes: {
-        baseUi: "http://localhost:4173/assets/remoteEntry.js",
+        baseUi: "http://localhost:5001/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),
   ],
-  server: {
-    port: 3002,
+  build: {
+    modulePreload: false,
+    target: "esnext",
+    minify: false,
+    cssCodeSplit: false,
   },
 });

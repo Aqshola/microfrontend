@@ -1,7 +1,7 @@
 import BaseLayout from "baseUi/Layout";
 
 function App() {
-  return <BaseLayout>A Host UI</BaseLayout>;
+  return <BaseLayout>This is Feature A</BaseLayout>;
 }
 
 export default App;
