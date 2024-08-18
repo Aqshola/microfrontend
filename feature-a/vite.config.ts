@@ -7,9 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "main-ui",
+      name: "a-ui",
       remotes: {
         baseUi: "http://localhost:5001/assets/remoteEntry.js",
+        authUi: "http://localhost:8083/login/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),

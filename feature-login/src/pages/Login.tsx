@@ -1,7 +1,8 @@
 import type { FormProps } from "antd";
 import { Button, Checkbox, Flex, Form, Input, Typography } from "antd";
 import { ElementObjectCssStyle } from "../types/general";
-import useAuthStore from "../store/authStore";
+import authStore from "../store/authStore";
+import { useZustand } from "use-zustand";
 
 type FieldType = {
   username?: string;
@@ -22,7 +23,7 @@ export default function Login() {
     InputLogin: { width: "300px" },
   } satisfies ElementObjectCssStyle;
 
-  const auth = useAuthStore();
+  const auth = useZustand(authStore, (state) => state);
 
   const onFinish: FormProps<FieldType>["onFinish"] = (values) => {
     console.log("Success:", values);
