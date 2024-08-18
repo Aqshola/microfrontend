@@ -20,4 +20,17 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false,
   },
+  server: {
+    host: true,
+    port: 8082,
+    strictPort: true,
+    hmr: {
+      protocol: "ws",
+      port: 8082,
+    },
+  },
+  preview: {
+    port: 8082,
+    strictPort: true,
+  },
 });

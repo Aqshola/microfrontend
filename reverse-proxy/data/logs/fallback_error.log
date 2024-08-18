@@ -1,3 +1,15 @@
-2024/08/10 13:31:57 [warn] 184#184: 512 worker_connections are not enough, reusing connections
-2024/08/10 13:31:57 [alert] 184#184: 512 worker_connections are not enough
-2024/08/10 13:31:57 [error] 184#184: *629 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "shola.local", referrer: "http://shola.local/"
+2024/08/18 08:07:21 [alert] 225#225: 512 worker_connections are not enough
+2024/08/18 08:07:21 [error] 225#225: *868 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "shola.local", referrer: "http://shola.local/"
+2024/08/18 08:07:26 [error] 225#225: *337 "/var/www/html/login/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: localhost-nginx-proxy-manager, request: "GET /login/ HTTP/1.1", host: "shola.local"
+2024/08/18 08:07:27 [error] 225#225: *337 "/var/www/html/login/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: localhost-nginx-proxy-manager, request: "GET /login/ HTTP/1.1", host: "shola.local"
+2024/08/18 08:07:29 [error] 225#225: *337 "/var/www/html/login/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: localhost-nginx-proxy-manager, request: "GET /login/ HTTP/1.1", host: "shola.local"
+2024/08/18 08:31:17 [warn] 147#147: server name "shola.local/login" has suspicious symbols in /data/nginx/proxy_host/5.conf:20
+2024/08/18 08:31:23 [warn] 147#147: server name "shola.local/login" has suspicious symbols in /data/nginx/proxy_host/5.conf:20
+2024/08/18 08:31:44 [warn] 147#147: server name "shola.local/dash" has suspicious symbols in /data/nginx/proxy_host/4.conf:20
+2024/08/18 08:31:44 [warn] 147#147: server name "shola.local/login" has suspicious symbols in /data/nginx/proxy_host/5.conf:20
+2024/08/18 08:31:46 [error] 435#435: *1665 open() "/var/www/html/dash" failed (2: No such file or directory), client: 172.19.0.1, server: localhost-nginx-proxy-manager, request: "GET /dash HTTP/1.1", host: "shola.local", referrer: "http://localhost:81/"
+2024/08/18 08:31:46 [warn] 435#435: 512 worker_connections are not enough, reusing connections
+2024/08/18 08:31:46 [alert] 435#435: 512 worker_connections are not enough
+2024/08/18 08:31:46 [error] 435#435: *2270 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "shola.local", referrer: "http://shola.local/dash"
+2024/08/18 08:31:48 [error] 435#435: *1665 "/var/www/html/login/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: localhost-nginx-proxy-manager, request: "GET /login/ HTTP/1.1", host: "shola.local", referrer: "http://localhost:81/"
+2024/08/18 08:32:10 [warn] 147#147: server name "shola.local/login" has suspicious symbols in /data/nginx/proxy_host/5.conf:20
