@@ -3,7 +3,7 @@ import { useZustand } from "use-zustand";
 
 // import BaseLayout from "baseUi/Layout";
 export default function Home() {
-  const authStore = useZustand(authStoreFederation, (state) => state);
+  const authStore: any = useZustand(authStoreFederation, (state) => state);
 
   return (
     <>
